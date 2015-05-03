@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bower-rails'
 gem 'simple_form'
 gem 'slim'
+gem 'materialize-sass'
 
 # Authentication
 gem 'devise'

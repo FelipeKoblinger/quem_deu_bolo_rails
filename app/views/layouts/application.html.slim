@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title = 'Quem deu bolo?'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    = csrf_meta_tags
+
+  body
+    header
+      nav.teal.lighten-3
+        .nav-wrapper
+          .col.s12
+            a id="logo-container" href="#" class="brand-logo center"
+              = 'Quem deu bolo?'
+            ul id="nav-mobile" class="right hide-on-med-and-down"
+              li
+                a href="#"
+                  = 'Logout'
+    main
+      .row
+        .col.s3
+          = 'Left Side Menu'
+        .col.s9
+          = yield
+
+    footer.page-footer.teal.lighten-3
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Quem deu bolo?
+            p.grey-text.text-lighten-4
+              | Pequeno aplicativo criado para aprender Ruby on Rails. Baseado em uma amiga que nos deu bolo no dia de estudo.
+          .col.l4.offset-12.s12
+            = image_tag 'main/quem_deu_bolo_logo.png', :class => 'responsive-img right', :alt => 'Quem deu bolo?'
+      .footer-copyright
+        .container
+          = 'Quem deu o bolo? Criado por '
+          a href="https://github.com/arthurmiranda" class="teal lighten-5" target="_blank"
+            = 'Arthur Miranda Moreira'
+          = ' e '
+          a href="https://github.com/FelipeKoblinger" class="teal lighten-5" target="_blank"
+            = 'Felipe Koblinger'
+
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true

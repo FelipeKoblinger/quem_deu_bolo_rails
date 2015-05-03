@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Brand Logo */
+a.brand-logo {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.37);
+    font-weight: bold;
+}
