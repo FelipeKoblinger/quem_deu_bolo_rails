@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :person do
+  factory :people do
     name "MyString"
 nickname "MyString"
   end

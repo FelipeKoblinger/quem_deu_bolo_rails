@@ -1,0 +1,17 @@
+<h1>New Person</h1>
+
+<%= simple_form_for @people do |f| %>
+    <p>
+      <%= f.input :name, :label => 'Name' %>
+    </p>
+
+    <p>
+      <%= f.input :nickname, :label => 'Nickname' %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Back', people_path %>
