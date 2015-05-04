@@ -15,14 +15,7 @@
     </p>
 
     <p>
-      <%= f.association :people, :collection => Person.all, :include_blank => true %>
-      <!--%= f.input :people, collection: @person,
-                  #as: :grouped_select,
-                  #:group_method => :person,
-                  #:label_method => :name,
-                  #:value_method => :name,
-                  #:include_blank => false,
-                  :label => 'People', :placeholder => 'Please, enter some People' %-->
+      <%= f.association :people, :as => 'select', :collection => Person.all, :include_blank => false %>
     </p>
 
     <p>

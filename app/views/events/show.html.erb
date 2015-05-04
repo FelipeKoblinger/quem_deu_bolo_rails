@@ -2,7 +2,7 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @events.event_date %>
+  <%= @events.event_date.to_date %>
 </p>
 
 <p>
@@ -13,4 +13,11 @@
 <p>
   <strong>Description:</strong>
   <%= @events.description %>
+</p>
+
+<p>
+  <strong>People:</strong>
+  <% @events.people.each do |person| %>
+    <p><%= person.name %></p>
+  <% end %>
 </p>

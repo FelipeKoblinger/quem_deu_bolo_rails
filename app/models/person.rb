@@ -1,3 +1,3 @@
 class Person < ActiveRecord::Base
-  belongs_to :events
+  has_and_belongs_to_many :events
 end

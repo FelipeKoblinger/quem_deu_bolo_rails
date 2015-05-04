@@ -13,3 +13,20 @@ a.brand-logo {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.37);
     font-weight: bold;
 }
+
+#front-page-logo {
+    display: inline-block;
+    pointer-events: none;
+    width: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+ul.side-nav.fixed li.logo:hover {
+    background-color: transparent;
+}
+
+/* Top */
+nav.top-nav {
+    box-shadow: none;
+}

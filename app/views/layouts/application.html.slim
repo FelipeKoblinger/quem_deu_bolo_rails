@@ -15,14 +15,17 @@ html
               = 'Quem deu bolo?'
             ul id="nav-mobile" class="right hide-on-med-and-down"
               li
+                = link_to 'People', people_path
+              li
+                = link_to 'Events', events_path
+              li
                 a href="#"
                   = 'Logout'
     main
-      .row
-        .col.s3
-          = 'Left Side Menu'
-        .col.s9
-          = yield
+      .container
+        .row
+          .col.s12
+            = yield
 
     footer.page-footer.teal.lighten-3
       .container
